@@ -7,16 +7,45 @@
 int main() {
     // Nível Novato - Movimentação das Peças
     // Sugestão: Declare variáveis constantes para representar o número de casas que cada peça pode se mover.
-
-    // Implementação de Movimentação do Bispo
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação do Bispo em diagonal.
-
-    // Implementação de Movimentação da Torre
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Torre para a direita.
-
-    // Implementação de Movimentação da Rainha
-    // Sugestão: Utilize uma estrutura de repetição para simular a movimentação da Rainha para a esquerda.
-
+    int contador = 1;
+    int torre = 5;
+    int bispo = 5;
+    int rainha = 8;
+    
+    printf("Movimento de algumas peças de Xadrez.\n");
+    printf("=====================================\n");
+    printf("Movimento da Torre\n");
+    printf("-------------------------------------\n");
+    
+    // Realiza os movimentos da torre usando a estrutura de loop while
+    while (contador <= torre) {
+      printf("Direita\n");
+      
+      contador++;
+    }
+    contador = 1;
+    
+    printf("\n");
+    printf("Movimento do Bispo\n");
+    printf("-------------------------------------\n");
+    
+    // Realiza os movimentos do bispo usando a estrutura de loop do while
+    do {
+      printf("Cima, Direita\n");
+      
+      contador++;
+    } while (contador <= bispo);
+    contador = 1;
+    
+    printf("\n");
+    printf("Movimento da Rainha\n");
+    printf("-------------------------------------\n");
+    
+    // Realiza os movimentos da rainha usando a estrutura de loop for
+    for (contador; contador <= rainha; contador++) {
+      printf("Esquerda\n");
+    }
+    contador = 1;
     // Nível Aventureiro - Movimentação do Cavalo
     // Sugestão: Utilize loops aninhados para simular a movimentação do Cavalo em L.
     // Um loop pode representar a movimentação horizontal e outro vertical.
